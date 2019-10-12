@@ -3,14 +3,14 @@ program = 'gerak lurus'
 
 print(f'Program {program} oleh {nama}')
 
-def hitung_kecepatan(jarak , waktu):
-    kecepatan = jarak / waktu
-    print(f'jarak = {jarak / 1000}km ditempuh dalam waktu = {waktu / 60}menit')
-    print(f'sehingga kecepatan = {kecepatan} m/s')
-    return jarak / waktu
+def hitung_tegangan(arus , hambatan):
+    tegangan = arus * hambatan
+    print(f'arus = {arus / 30}A dengan hambatan = {hambatan / 8}ohm')
+    print(f'sehingga tegangan = {tegangan} volt')
+    return arus * hambatan
 
-#jarak = 1000
-#waktu = 5 * 60
-kecepatan = hitung_kecepatan(1000, 5 * 60)
-kecepatan = hitung_kecepatan(3000, 70 * 60)
+#arus = 30
+#hambatan = 8
+tegangan = hitung_tegangan(30, 8)
+tegangan = hitung_tegangan(50, 6)
 
